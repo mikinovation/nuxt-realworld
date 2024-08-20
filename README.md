@@ -43,3 +43,6 @@ npm run dev
     - https://github.com/supermacro/neverthrow
     - 関数型プログラミングの考え方を取り入れてエラーハンドリングを行う
     - 基本的にフロント、バックエンドともに例外を投げないようにしたい
+  - lint
+    - Nuxt ESLint
+    - FormatterにはESLint Stylistic(Prettier程強力なフォーマットのルールではない)
