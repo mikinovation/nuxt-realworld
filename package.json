@@ -7,11 +7,20 @@
     "dev": "nuxt dev",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.1",
-    "nuxt": "^3.12.4",
     "vue": "^3.4.38"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.14.1",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^14.12.3",
+    "nuxt": "^3.12.4",
+    "playwright-core": "^1.46.1",
+    "unplugin-auto-import": "^0.18.2",
+    "vitest": "^2.0.5"
   }
 }

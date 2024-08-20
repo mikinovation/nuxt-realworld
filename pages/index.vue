@@ -4,6 +4,6 @@ const {data} = useFetch('/api/user')
 
 <template>
   <div>
-    <NuxtPage/>
+    {{ data }}
   </div>
 </template>
