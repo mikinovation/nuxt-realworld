@@ -1,18 +1,22 @@
-import {drizzle} from 'drizzle-orm/d1'
-
-export {sql, eq, and, or} from 'drizzle-orm'
-
+import { drizzle } from 'drizzle-orm/node-postgres'
+import pg from 'pg'
 import * as schema from '../database/schema'
-import postgres from "postgres";
 
+const { Pool } = pg
+
+export { sql, eq, and, or } from 'drizzle-orm'
 export const tables = schema
 
-const sql = postgres("...", {
-    max: 1
+const pool = new Pool({
+  host: 'localhost',
+  port: 5432,
+  database: 'realworld',
+  user: 'postgres',
+  password: 'password',
 })
 
 export const useDrizzle = () => {
-    return drizzle(sql)
+  return drizzle(pool)
 }
 
 export type User = typeof schema.users.$inferSelect
