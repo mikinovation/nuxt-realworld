@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-const {data} = useFetch('/api/user')
+const { data } = useFetch('/api/user')
 </script>
 
 <template>
   <div>
-    <NuxtPage/>
+    {{ data }}
   </div>
 </template>
