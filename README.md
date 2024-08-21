@@ -1,6 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Nuxt Realworld
 
 ## Setup
 
@@ -10,10 +8,28 @@ packageのインストール
 npm install
 ```
 
+DBのマイグレーション
+
+```bash
+npm run db:migrate
+```
+
+Seedデータの投入
+
+```bash
+npm run db:seed
+```
+
 ## 開発サーバーの立ち上げ
 
 ```bash
 npm run dev
+```
+
+## Drizzle Studioの立ち上げ
+
+```bash
+npm run db:studio
 ```
 
 ## 技術選定
